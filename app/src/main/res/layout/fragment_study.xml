@@ -7,7 +7,7 @@
     tools:context=".ui.home.HomeFragment">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/FAB"
         android:layout_width="81dp"
         android:layout_height="75dp"
         android:layout_marginTop="624dp"
