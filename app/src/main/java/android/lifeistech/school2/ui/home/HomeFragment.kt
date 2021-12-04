@@ -26,11 +26,6 @@ class HomeFragment : Fragment() {
         return root
     }
 
-
-    FAB.setOnClickListener{
-        val intent= Intent(this, WriteActivity::class.java)
-        startActivity(intent)
-
-    }
+    
 
 }
