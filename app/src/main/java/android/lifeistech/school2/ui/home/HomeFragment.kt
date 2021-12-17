@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import android.lifeistech.school2.R
 import android.lifeistech.school2.ui.WriteActivity
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
@@ -26,6 +27,13 @@ class HomeFragment : Fragment() {
         return root
     }
 
-    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        fab.setOnClickListener{
+            val intent = Intent(getActivity(),WriteActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
 
 }
